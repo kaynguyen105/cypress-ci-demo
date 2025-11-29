@@ -34,12 +34,12 @@ export default defineConfig({
     videosFolder: "cypress/videos",
 
    //set baseUrl
-   baseUrl: 'http://localhost:8000/',
-   projectId: "6fm9p5",
-   retries: {
-      runMode: 2,
-      openMode: 2
+  //  baseUrl: 'http://localhost:8000/',
+  //  projectId: "6fm9p5",
+  //  retries: {
+  //     runMode: 2,
+  //     openMode: 2
       
-   }
+  //  }
  },
 });
