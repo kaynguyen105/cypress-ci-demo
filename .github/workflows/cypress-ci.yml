@@ -14,10 +14,14 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 18
+          cache: 'npm'
 
       - run: npm install
 
-      - run: npx cypress run
+      # ✅ BẮT BUỘC THÊM DÒNG NÀY
+      - run: npx cypress install
+
+      - run: npx cypress run --browser electron
 
       - name: Upload Artifacts
         if: always()
